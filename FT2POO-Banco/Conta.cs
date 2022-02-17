@@ -40,6 +40,21 @@ namespace FT2POO_Banco
 
             return conta;
         }
+        public static List<Conta> Eliminar(List<Conta> contas)
+        {
+            int numero;
+            Console.WriteLine("Qual o numero de conta a eliminar? ");
+            numero = int.Parse(Console.ReadLine());
+            for (int i=0;i<contas.Count; i++)
+            {
+                if(contas[i].Numero== numero)
+                {
+                    contas.RemoveAt(i);
+                    break;
+                } 
+            }
+            return contas;
+        }
 
         public override int GetHashCode()
         {

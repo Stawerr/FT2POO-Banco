@@ -44,7 +44,8 @@ namespace FT2POO_Banco
                         Console.Clear();
                         break;
                     case 2:
-
+                        listaContas = Conta.Eliminar(listaContas);
+                        Console.Clear();
                         break;
                     case 3:
 
